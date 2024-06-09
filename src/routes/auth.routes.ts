@@ -9,14 +9,14 @@ router.get('/', (_, res) => {
 
 // router.post('/refresh_token', Auth.refresh)
 
-router.post('/login', Auth.login)
+// router.post('/login', Auth.login)
 
-//Update Account Passwords
-router.post('/account/password/change', Auth.changePassword)
+// //Update Account Passwords
+// router.post('/account/password/change', Auth.changePassword)
 
-//forgot Password
-router.post('/forgot_password', Auth.forgotPassword)
-router.post('/otp/verify', Auth.verifyOTP)
-router.post('/reset-password', Auth.resetPassword)
+// //forgot Password
+// router.post('/forgot_password', Auth.forgotPassword)
+// router.post('/otp/verify', Auth.verifyOTP)
+// router.post('/reset-password', Auth.resetPassword)
 
 export default router

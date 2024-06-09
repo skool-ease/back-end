@@ -1,7 +1,5 @@
-// import { excludePaths, getUser, verifyJWT } from "./authentication";
+import { excludePaths, getUser, verifyJWT } from './authentication'
 
-// const middlewares = [excludePaths, verifyJWT, getUser];
-
-const middlewares: any = []
+const middlewares = [excludePaths, verifyJWT, getUser]
 
 export default middlewares

@@ -2,17 +2,17 @@ import express, { Application, Request, Response } from 'express'
 import cors from 'cors'
 import appConstants from './appConstants'
 import AuthRoutes from './routes/auth.routes'
+import middlewares from './middlewares'
 
 const app: Application = express()
 
 app.use(
   express.json({
-    limit: '50mb'
+    limit: '1gb'
   })
 )
 app.use(cors())
 
-// @ts-expect-error TODO
 app.use(middlewares)
 
 app.use('/auth', AuthRoutes)
