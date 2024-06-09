@@ -1,0 +1,7 @@
+node_modules
+backend/build
+.env
+package-lock.json
+uploads
+
+pnpm-lock.yaml 
